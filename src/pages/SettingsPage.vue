@@ -17,7 +17,7 @@
         "
       >
         <template #prepend>
-          <q-icon :name="`img:src/assets/${locale}.svg`" size="sm" />
+          <q-icon :name="`img:flags/${locale}.svg`" size="sm" />
         </template>
 
         <template #option="scope">
