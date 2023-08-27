@@ -1,5 +1,5 @@
-import enUS from './en-US/index';
-import de from 'src/i18n/de/index';
+import enUS from './en-US.json';
+import de from 'src/i18n/de.json';
 
 export default {
   'en-US': enUS,
