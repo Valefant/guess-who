@@ -28,7 +28,7 @@ export default route(function (/* { store, ssrContext } */) {
 
   Router.afterEach((to) => {
     const userPreferences = useUserPreferencesStore();
-    userPreferences.tab = to?.path?.split('/')?.at(-1) ?? 'decks';
+    userPreferences.tab = to?.path?.substring(1).split('/')?.at(0) ?? 'decks';
   });
 
   return Router;

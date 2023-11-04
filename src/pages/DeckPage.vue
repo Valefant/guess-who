@@ -12,9 +12,11 @@
         :rows-per-page-options="[0]"
         :filter="filter"
         v-model:selected="selected"
-        style="height: calc(100vh - 48px); position: fixed"
+        :style="
+          $q.screen.gt.md ? 'height: calc(100vh)' : 'height: calc(100vh - 3rem)'
+        "
         virtual-scroll
-        class="tw-w-[22rem]"
+        class="tw-fixed tw-w-[22rem]"
       >
         <template #top>
           <div class="tw-flex tw-space-x-2">
