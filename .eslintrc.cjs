@@ -89,5 +89,8 @@ module.exports = {
     // custom
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/no-explicit-any': 'warn',
+    'vue/block-order': ['error', {
+      'order': ['template', 'script', 'style']
+    }],
   }
 }
