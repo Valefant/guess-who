@@ -59,6 +59,9 @@
             <q-item-section avatar>
               <q-icon name="chevron_left" />
             </q-item-section>
+            <q-item-section>
+              {{ $t('navigation.minimize') }}
+            </q-item-section>
           </q-item>
         </q-list>
       </q-scroll-area>

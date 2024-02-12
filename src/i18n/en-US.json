@@ -41,6 +41,7 @@
   "navigation": {
     "cards": "Cards",
     "decks": "Decks",
+    "minimize": "Minimize",
     "settings": "Settings"
   },
   "page": {
