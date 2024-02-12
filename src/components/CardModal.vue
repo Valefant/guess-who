@@ -18,12 +18,12 @@
             :label="$t('form.name') + '*'"
             v-model="card.name"
             autofocus
-            :rules="[(val) => val !== '' || $t('validation.name')]"
+            :rules="[(val: string) => val !== '' || $t('validation.name')]"
           />
           <q-input
             :label="$t('form.imageUrl') + '*'"
             v-model="card.imageUrl"
-            :rules="[(val) => val !== '' || $t('validation.imageUrl')]"
+            :rules="[(val: string) => val !== '' || $t('validation.imageUrl')]"
           />
           <q-select
             :label="$t('form.tags.label')"
@@ -101,7 +101,7 @@ const model = computed({
   },
 });
 
-function createTag(val: string, done: any) {
+function createTag(val: string, done: (item?: any, mode?: 'add' | 'toggle' | 'add-unique' | undefined) => void) {
   if (val.length > 0) {
     if (!app.tags.includes(val)) {
       app.tags.push(val);
